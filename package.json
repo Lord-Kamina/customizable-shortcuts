@@ -1,11 +1,11 @@
 {
     "name": "customizable-shortcuts",
-    "license": "MPL 1.1/GPL 2.0/LGPL 2.1",
     "author": "Tim Taubert <tim@timtaubert.de>",
     "homepage": "https://github.com/ttaubert/customizable-shortcuts",
     "version": "1.0",
     "fullName": "Customizable Shortcuts",
     "id": "customizable-shortcuts@timtaubert.de",
+    "license": "MPL 2.0",
     "description": "Enables customization and overriding of several default shortcuts.",
     "contributors": ["Gregorio Litenstein <mazinger@vtr.net>"],
     "icon":"data/icon48.png",

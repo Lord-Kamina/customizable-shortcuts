@@ -20,6 +20,6 @@ discover already existing shortcuts.
 * The extension should now be localizable.
 * Among other things.
 
-# License
+## License
 
-Customizable Shortcuts is licensed under the terms of MPL 1.1/GPL 2.0/LGPL 2.1.
+Customizable Shortcuts is licensed under the terms of MPL 2.0
