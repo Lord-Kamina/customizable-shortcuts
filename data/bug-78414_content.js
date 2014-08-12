@@ -1,7 +1,7 @@
 /* This Source Code Form is subject to the terms of the Mozilla Public
-* License, v. 2.0. If a copy of the MPL was not distributed with this
-* file, You can obtain one at http://mozilla.org/MPL/2.0/. */
-	var clickListeners = {};
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+var clickListeners = {};
 
 self.port.on("findPlugins", function(workerID) { // Look for objects to modify.
     var cssSelectors = self.options.cssSelectors;
