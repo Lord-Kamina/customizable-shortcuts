@@ -1,0 +1,4 @@
+<!ENTITY prefwindow.title "Patrones de URL">
+<!ENTITY urlpane.title "Patrones de URL">
+<!ENTITY textbox.label "Lista de URL y patrones incluidos">
+<!ENTITY textbox.placeholder "Una lista de URLs exactas, como 'http://www.fail.cl' o patrones como '*.mozilla.org*. Se debe ingresar una URL o patrón por línea, cada una puede tener máximo un '*', el add-on quitará en forma automática las líneas no-válidas.">

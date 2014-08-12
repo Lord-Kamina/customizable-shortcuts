@@ -1,0 +1,4 @@
+<!ENTITY prefwindow.title "URL Matching">
+<!ENTITY urlpane.title "URL Matching">
+<!ENTITY textbox.label "List of addresses and patterns to match">
+<!ENTITY textbox.placeholder "A list of exact URLs such as 'http://www.fail.cl' or patterns such as '*.mozilla.org'. You must specify a single address or pattern per line, and each may contain no more than one '*', invalid patterns will be removed automatically.">

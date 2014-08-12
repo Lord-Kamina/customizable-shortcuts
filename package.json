@@ -16,10 +16,23 @@
     "name": "overridePluginFocus",
     "type": "bool",
     "title": "Steal focus from plug-ins?",
-    "description":"When this is on, plugins such as flash will be told to release mouse focus immediately after they have been clicked on.",
+    "description":"When this is on, plugins such as Flash will be told to release mouse focus a certain amount of time after they have been clicked on.",
     "value":true    
     },
     {
+    "name": "shiftAllowFocus",
+    "type": "bool",
+    "title": "Allow plug-ins to keep focus on Shift+Click?",
+    "description":"When this is on, plugins such as Flash will be allows to retain mouse focus if Shift was pressed during the click.",
+    "value":true
+    },
+    {
+    "name": "UrlPatternsDialog",
+    "type": "control",
+    "label": "Edit",
+    "title": "Address Patterns",
+    "description":"Edit address patterns used to define the websites on which we'll force plug-ins to release focus. Valid patterns are full URLs and domain names with or without '*' as a wildcard. Only one * allowed per URL, the add-on will automatically remove invalid entries from the list."
+    },    {
     "name": "pluginCssSelectors",
     "type": "string",
     "title": "List of CSS Selectors by which to find plugins",
@@ -30,8 +43,15 @@
     "name": "domainUrlPattern",
     "type": "string",
     "title": "Address Pattern",
-    "description":"This pattern will be used to define which sites we will try to prevent focus capturing on. You can use * as wildcards or provide a (case-sensitive) Regular Expression.",
-    "value":"*"
-    }   
+    "value":"*",
+    "hidden":true
+    },
+    {
+    "name": "stealFocusDelay",
+    "type": "integer",
+    "title": "Focus Blur Delay",
+    "description":"This value corresponds to the amount of time (in milliseconds) before plugins are told to release mouse focus. Default is 5 seconds.",
+    "value":5000
+    }
     ]
 }

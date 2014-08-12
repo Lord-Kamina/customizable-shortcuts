@@ -1,0 +1,8 @@
+<!ENTITY dialog_title "Teclas Rápidas">
+<!ENTITY filter_placeholder "Buscar">
+<!ENTITY action_column.label "Acción">
+<!ENTITY shortcut_column.label "Teclas">
+<!ENTITY reset_button.label "Restaurar">
+<!ENTITY edit_button.label "Editar">
+<!ENTITY disable_button.label "Deshabilitar">
+<!ENTITY accept_button.label "Cerrar">

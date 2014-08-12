@@ -5,6 +5,8 @@
 
 self.port.on("findPlugins", function(workerID) { // Look for objects to modify.
     var cssSelectors = self.options.cssSelectors;
+    var stealFocusDelay = self.options.stealFocusDelay;
+    var shiftAllowFocus = self.options.shiftAllowFocus;
     var embeds = (document.querySelectorAll(cssSelectors) || []);
     // embeds && console.warn("DEBUG:	queryselectorall: "+embeds.length);
     for (let i = 0; i < (embeds.length || 0); i++) {
@@ -15,6 +17,16 @@ self.port.on("findPlugins", function(workerID) { // Look for objects to modify.
         }
         embeds[i].setAttribute("onClick", "this.blur()");
 
+        var listener = function(evt) {
+                if ((true != shiftAllowFocus || true != evt.shiftKey) && (1 == evt.which)) {
+                    window.setTimeout(function() {
+                        alert('This is a timeout.');
+                        evt.target.blur()
+                    }, stealFocusDelay)
+                }
+            } // 		Capture only left-clicks, and check whether we want to ignore shift+click.
+            embeds[i].addEventListener('click', listener);
+        clickListeners[embeds[i].id] = listener; // Store a reference to the new listener for eventual removal.
     }
     if (embeds.length < 1) {
 
@@ -22,25 +34,15 @@ self.port.on("findPlugins", function(workerID) { // Look for objects to modify.
         self.port.emit("noEmbeds", workerID);
 
 
+        self.port.emit("noEmbeds", workerID); // Being useless, report back for "handling."
     }
 
 });
 
-self.port.on("removeMods", function removeMods() {
-    var cssSelectors = self.options.cssSelectors;
-    var embeds = (document.querySelectorAll(cssSelectors) || []);
-    embeds && console.warn("DEBUG:	queryselectorall: " + embeds.length);
-
-    for (let i = 0; i < (embeds.length || 0); i++) {
-
-        // console.warn("DEBUG:	Removing mod from Embed: "+embeds[i]);
-        embeds[i].removeAttribute("onClick");
-        if (embeds[i].hasAttribute("onClickOriginal")) {
-            // console.warn("DEBUG:	Item had a previous onClick function, restoring it.");
-            embeds[i].setAttribute("onClick", embeds[i].getAttribute("onClickOriginal")); // Restore original function, if available.
-            embeds[i].removeAttribute("onClickOriginal");
-        }
-        // self.port.emit("revertedChanges",[ embeds[i].tagName, embeds[i].id, document.URL ])
+self.port.on("removeMods", function removeMods(workerID) {
+    for (let i of Object.keys(clickListeners)) {
+        document.getElementById(i).removeEventListener('click', clickListeners[i]);
     }
 
+    self.port.emit("noEmbeds", workerID); // Commit Seppuku.
 });
