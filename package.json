@@ -44,7 +44,7 @@
     "name": "domainUrlPattern",
     "type": "string",
     "title": "Address Pattern",
-    "value":"*",
+    "value": "[\\\u0022*\\\u0022]",
     "hidden":true
     },
     {
