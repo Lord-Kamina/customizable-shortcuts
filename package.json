@@ -8,7 +8,7 @@
     "id": "keybinder@fail.cl",
     "main": "lib/main",
     "description": "Enables customization and overriding of several default shortcuts.",
-    "contributors": ["Gregorio Litenstein <g.litenstein@gmail.com>","Tim Taubert <tim@timtaubert.de>"],
+    "contributors": ["Gregorio Litenstein <g.litenstein@gmail.com>","Tim Taubert <tim@timtaubert.de>","Natz (http://cheetahamsloth.deviantart.com)"],
     "icon":"data/icon48.png",
     "icon64":"data/icon64.png",
     "permissions":{"private-browsing":true},
