@@ -6,11 +6,11 @@
  -->
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 <?xml-stylesheet href="chrome://global/skin/preferences.css" type="text/css"?>
-<?xml-stylesheet href="chrome://customizable-shortcuts/skin/prefs.css" type="text/css"?>
-<!DOCTYPE dialog SYSTEM "chrome://customizable-shortcuts/locale/ttShortcuts_preferences.dtd">
+<?xml-stylesheet href="chrome://keybinder/skin/prefs.css" type="text/css"?>
+<!DOCTYPE dialog SYSTEM "chrome://keybinder/locale/ttShortcuts_preferences.dtd">
 <dialog
     id="ttShortcutsPrefsDialog"
-    windowtype="CustomizableShortcuts:config"
+    windowtype="Keybinder:config"
     title="&dialog_title;"
     buttons=","
     buttonalign="center"

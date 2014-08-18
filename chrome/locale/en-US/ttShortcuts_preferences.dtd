@@ -1,4 +1,4 @@
-<!ENTITY dialog_title "Customizable Shortcuts">
+<!ENTITY dialog_title "Keybinder">
 <!ENTITY filter_placeholder "Search">
 <!ENTITY action_column.label "Action">
 <!ENTITY shortcut_column.label "Shortcut">

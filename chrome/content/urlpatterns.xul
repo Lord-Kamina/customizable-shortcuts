@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
-<!DOCTYPE prefwindow SYSTEM "chrome://customizable-shortcuts/locale/prefwindow.dtd">
+<!DOCTYPE prefwindow SYSTEM "chrome://keybinder/locale/prefwindow.dtd">
 <prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
 			id="urlPatternsDialog"			onload="document.documentElement.getButton('accept').hidden=false;document.documentElement.getButton('accept').disabled=false;document.documentElement.getButton('cancel').hidden=false;document.documentElement.getButton('cancel').disabled=false;document.getElementById('textbox').value=window.arguments[0];"
 			ondialogaccept="validateUrls();"
