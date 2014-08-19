@@ -5,7 +5,7 @@ It is based (and a large part of the code) was originally written by Tim Taubert
 After much work and, at one point trying to contribute to the original project but being unable to reconcile all the changes I made with the original author, I decided to release my own branch of the extension.
 
 - Version: 1.1
-- Date: 2014-07-29
+- Date: 2014-08-22
 - Official site: <https://github.com/Lord-Kamina/keybinder>
 
 ## Changes
@@ -30,6 +30,9 @@ After much work and, at one point trying to contribute to the original project b
 * The extension should now be localizable.
 * Several other minor changes and fixed from the original extension.
 
+# TO DO
+* Find alternative to the deprecated "window-utils" API; so far a suitable replacement has not come forth.
+
 ## License
 
-Customizable Shortcuts is licensed under the terms of MPL 2.0
+Keybinder is licensed under the terms of MPL 2.0
