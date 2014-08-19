@@ -30,6 +30,9 @@ After much work and, at one point trying to contribute to the original project b
 * The extension should now be localizable.
 * Several other minor changes and fixed from the original extension.
 
+# TO DO
+* Get rid of the deprecated "window-utils" API; so far a suitable replacement has not come forth.
+
 ## License
 
-Customizable Shortcuts is licensed under the terms of MPL 2.0
+Keybinder is licensed under the terms of MPL 2.0
