@@ -4,11 +4,19 @@ This Firefox add-on allows the user to customize various shortcuts, as well as c
 It is based (and a large part of the code) was originally written by Tim Taubert for the "Customizable Shortcuts" add-on that can be found here: https://addons.mozilla.org/en-US/firefox/addon/customizable-shortcuts/
 After much work and, at one point trying to contribute to the original project but being unable to reconcile all the changes I made with the original author, I decided to release my own branch of the extension.
 
-- Version: 1.1
-- Date: 2014-08-22
+- Version: 1.1.1
+- Date: 2014-09-16
 - Official site: <https://github.com/Lord-Kamina/keybinder>
 
 ## Changes
+#### Version 1.1.1
+* Multiple bug fixes
+	- Fixed bug when opening the shortcut dialog when already open; now, it focuses the window instead of trying to recreate it.
+	- Same thing for URL patterns in the extension manager.
+	- Clean-up script wasn't getting rid of menu items, fixed that.
+	- Prevent the extension from adding redundant menu items.
+	- Fixed odd bug whereby pressing dead keys (and some punctuation) would prevent them from working.
+
 #### Version 1.1
 * Renamed Extension and changed icon.
 * As per the original add-on, changed to MPL 2.0.
