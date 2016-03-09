@@ -4,11 +4,16 @@ This Firefox add-on allows the user to customize various shortcuts, as well as c
 It is based (and a large part of the code) was originally written by Tim Taubert for the "Customizable Shortcuts" add-on that can be found here: https://addons.mozilla.org/en-US/firefox/addon/customizable-shortcuts/
 After much work and, at one point trying to contribute to the original project but being unable to reconcile all the changes I made with the original author, I decided to release my own branch of the extension.
 
-- Version: 1.1.1
-- Date: 2014-09-16
+- Version: 1.1.2
+- Date: 2016-03-09
 - Official site: <https://github.com/Lord-Kamina/keybinder>
 
 ## Changes
+#### Version 1.1.2
+* Bug fixes
+	- Fixed an incorrect path in overlay.js that was causing an error.
+	- Fixed compatibility with Firefox 45: If version is 45 or higher, the extension excludes the code targeting Tab Groups, UNLESS the TabGroups extension is also installed.
+
 #### Version 1.1.1
 * Multiple bug fixes
 	- Fixed bug when opening the shortcut dialog when already open; now, it focuses the window instead of trying to recreate it.
