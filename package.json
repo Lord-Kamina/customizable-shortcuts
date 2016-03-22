@@ -3,7 +3,7 @@
     "license": "MPL 2.0",
     "author": "Gregorio Litenstein <g.litenstein@gmail.com>",
     "homepage": "https://github.com/Lord-Kamina/keybinder",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "title": "Keybinder",
     "id": "keybinder@fail.cl",
     "main": "lib/main",
