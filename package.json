@@ -33,14 +33,22 @@
     "label": "Edit",
     "title": "Address Patterns",
     "description":"Edit address patterns used to define the websites on which we'll force plug-ins to release focus. Valid patterns are full URLs and domain names with or without '*' as a wildcard. Only one * allowed per URL, the add-on will automatically remove invalid entries from the list."
-    },    {
+    },
+    {
+    "name": "ShortcutsDialog",
+    "type": "control",
+    "label": "Change",
+    "title": "Shortcut Mappings",
+    "description":"Open the main extension dialog, which will allow you to edit or disable most application shortcuts."
+    },
+    {
     "name": "pluginCssSelectors",
     "type": "string",
     "title": "List of CSS Selectors by which to find plugins",
     "description":"This list will define which plugins the extension will try to override as described above.",
     "value":"embed,object"
     },
-    {
+	{
     "name": "domainUrlPattern",
     "type": "string",
     "title": "Address Pattern",
