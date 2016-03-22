@@ -4,11 +4,34 @@ This Firefox add-on allows the user to customize various shortcuts, as well as c
 It is based (and a large part of the code) was originally written by Tim Taubert for the "Customizable Shortcuts" add-on that can be found here: https://addons.mozilla.org/en-US/firefox/addon/customizable-shortcuts/
 After much work and, at one point trying to contribute to the original project but being unable to reconcile all the changes I made with the original author, I decided to release my own branch of the extension.
 
-- Version: 1.1.2
-- Date: 2016-03-09
+- Version: 1.2.0
+- Date: 2016-03-21
 - Official site: <https://github.com/Lord-Kamina/keybinder>
 
 ## Changes
+#### Version 1.2.0
+
+This version implements several bug-fixes as well as some changes and additions and several of the updates Tim Taubert had made to his add-on between the time I branched my fork and when he decided to discontinue it.
+
+* Bug fixes
+	- Fixed incorrect JSON parsing of URL Patterns preference that was causing Keybinder to throw.
+	- Fixed a check in the pageMod code to prevent an occasional error.
+	- Several issues with incorrect modifiers being read on some platforms.
+* Changes/Additions
+	- The main dialog is now accessible (in addition to the usual place) from the extension preferences interface.
+	- Added some new key labels and modified groupings somewhat.
+	- More robust handling of modifiers, support for OS and AltGr modifiers.
+	- Give platform-appropriate name to the "Meta" key.
+	- Added accesskeys to the buttons in the main configure dialog, to improve user experience and keyboard-friendliness.
+	- The dialog now supports several keyboard shortcuts for various tasks:
+		- Activate the filter by pressing Ctrl(Cmd on Mac)+F
+		- Clear the filter by pressing Escape
+		- Edit a shortcut by selecting it with the mouse or arrow keys and pressing Enter.
+		- Cancel editing a shortcut by pressing Escape
+		- Close the dialog by pressing Escape or Ctrl(Cmd on Mac)+W
+	- When editing a shortcut, Keybinder will now automatically update it once it detects it's a valid shortcut.
+	- Due to incompatibility in handling and storing shortcut definitions with Quicksaver's extension, Keybinder will now completely ignore Tab Groups on Firefox 45+.
+
 #### Version 1.1.2
 * Bug fixes
 	- Fixed an incorrect path in overlay.js that was causing an error.
