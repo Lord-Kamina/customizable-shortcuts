@@ -1,4 +1,4 @@
 content keybinder          chrome/content/ contentaccessible=yes
 skin    keybinder  icons   chrome/skin/
-locale  keybinder  en-US 	chrome/locale/en-US/
-locale  keybinder  es-ES 	chrome/locale/es-ES/
+locale  keybinder  en-US locale/en-US/
+locale  keybinder  es-ES locale/es-ES/
