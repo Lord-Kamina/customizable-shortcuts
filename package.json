@@ -11,6 +11,9 @@
     "contributors": ["Gregorio Litenstein <g.litenstein@gmail.com>","Tim Taubert <tim@timtaubert.de>","Natz (http://cheetahamsloth.deviantart.com)"],
     "icon":"data/icon48.png",
     "icon64":"data/icon64.png",
+    "engines": {
+    "firefox": ">=38.0a1"
+  },
     "permissions":{"private-browsing":true},
     "preferences":[
     {
@@ -52,7 +55,7 @@
     "name": "domainUrlPattern",
     "type": "string",
     "title": "Address Pattern",
-    "value": "[\\\u0022*\\\u0022]",
+    "value": "[\"*\"]",
     "hidden":true
     },
     {
