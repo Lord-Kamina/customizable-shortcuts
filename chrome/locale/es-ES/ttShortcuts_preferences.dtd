@@ -3,6 +3,9 @@
 <!ENTITY action_column.label "Acción">
 <!ENTITY shortcut_column.label "Teclas">
 <!ENTITY reset_button.label "Restaurar">
+<!ENTITY reset_button.key "R">
 <!ENTITY edit_button.label "Editar">
+<!ENTITY edit_button.key "E">
 <!ENTITY disable_button.label "Deshabilitar">
+<!ENTITY disable_button.key "D">
 <!ENTITY accept_button.label "Cerrar">

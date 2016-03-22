@@ -14,6 +14,7 @@
     title="&dialog_title;"
     buttons=","
     buttonalign="center"
+    defaultButton="none"
     buttonpack="center"
     ondialogcancel="return false;"
     buttonlabelaccept="&accept_button.label;"
@@ -39,10 +40,16 @@
 				</hbox>
 				<separator class="thin" />
 				<hbox id="ttCustomizableShortcuts_ButtonBox">
-					<button id="ttCustomizableShortcuts_Reset" label="&reset_button.label;" disabled="true" />
-					<button id="ttCustomizableShortcuts_Edit" label="&edit_button.label;" disabled="true" />
-					<button id="ttCustomizableShortcuts_Disable" label="&disable_button.label;" disabled="true" />
+					<button id="ttCustomizableShortcuts_Reset" label="&reset_button.label;" accesskey="&reset_button.key;" disabled="true" />
+					<button id="ttCustomizableShortcuts_Edit" label="&edit_button.label;" accesskey="&edit_button.key;" disabled="true" />
+					<button id="ttCustomizableShortcuts_Disable" label="&disable_button.label;" accesskey="&disable_button.key;" disabled="true" />
 					<spacer flex="1" />
 					<button id="ttCustomizableShortcuts_Accept" label="&accept_button.label;" disabled="false" />
 				</hbox>
+	<keyset>
+	<key id="esc_cmd" keycode="VK_ESCAPE" oncommand="document.getElementById('ttCustomizableShortcuts_Accept').click()"/>
+		<key id="quit_key" key="W" modifiers="accel" oncommand="document.getElementById('ttCustomizableShortcuts_Accept').click()"/>
+	<key id="find_cmd" modifiers="accel" key="F" oncommand="document.getElementById('ttCustomizableShortcuts_Filter').focus();"/>
+<!-- 	<key id="edit" keycode="VK_ENTER" oncommand="function() { if (document.getElementById('ttCustomizableShortcuts_Tree').isFocused() ) }"/>	 -->
+	</keyset>
 </dialog>

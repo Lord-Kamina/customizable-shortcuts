@@ -3,6 +3,9 @@
 <!ENTITY action_column.label "Action">
 <!ENTITY shortcut_column.label "Shortcut">
 <!ENTITY reset_button.label "Reset">
+<!ENTITY reset_button.key "R">
 <!ENTITY edit_button.label "Edit">
+<!ENTITY edit_button.key "E">
 <!ENTITY disable_button.label "Disable">
+<!ENTITY disable_button.key "D">
 <!ENTITY accept_button.label "Close">
