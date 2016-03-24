@@ -4,11 +4,16 @@ This Firefox add-on allows the user to customize various shortcuts, as well as c
 It is based (and a large part of the code) was originally written by Tim Taubert for the "Customizable Shortcuts" add-on that can be found here: https://addons.mozilla.org/en-US/firefox/addon/customizable-shortcuts/
 After much work and, at one point trying to contribute to the original project but being unable to reconcile all the changes I made with the original author, I decided to release my own branch of the extension.
 
-- Version: 1.2.4
+- Version: 1.2.41
 - Date: 2016-03-21
 - Official site: <https://github.com/Lord-Kamina/keybinder>
 
 ## Changes
+#### Version 1.2.41
+
+* Bug Fixes
+	- Get rid of deprecated expression closures.
+	
 #### Version 1.2.4
 
 * Bug Fixes
