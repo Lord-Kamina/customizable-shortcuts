@@ -4,16 +4,17 @@ This Firefox add-on allows the user to customize various shortcuts, as well as c
 It is based (and a large part of the code) was originally written by Tim Taubert for the "Customizable Shortcuts" add-on that can be found here: https://addons.mozilla.org/en-US/firefox/addon/customizable-shortcuts/
 After much work and, at one point trying to contribute to the original project but being unable to reconcile all the changes I made with the original author, I decided to release my own branch of the extension.
 
-- Version: 1.2.5
+- Version: 1.2.51
 - Date: 2016-03-27
 - Official site: <https://github.com/Lord-Kamina/keybinder>
 
 ## Changes
-#### Version 1.2.5
+#### Version 1.2.51
 
 * Bug Fixes
 	- Changed problematic "exports" syntax.
 	- Small cleanups and removed some deprecated function calls.
+	- Fixed Application Icon.
 
 * Changes/Additions
 	- Textbox on URL Patterns dialog now selected by default.
