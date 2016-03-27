@@ -3,14 +3,13 @@
     "license": "MPL 2.0",
     "author": "Gregorio Litenstein <g.litenstein@gmail.com>",
     "homepage": "https://github.com/Lord-Kamina/keybinder",
-    "version": "1.2.5",
+    "version": "1.2.51",
     "title": "Keybinder",
     "id": "keybinder@fail.cl",
     "main": "lib/main",
     "description": "Enables customization and overriding of several default shortcuts.",
     "contributors": ["Gregorio Litenstein <g.litenstein@gmail.com>","Tim Taubert <tim@timtaubert.de>","Natz (http://cheetahamsloth.deviantart.com)"],
-    "icon":"data/icon48.png",
-    "icon64":"data/icon64.png",
+
     "engines": {
     "firefox": ">=38.0a1"
   },
