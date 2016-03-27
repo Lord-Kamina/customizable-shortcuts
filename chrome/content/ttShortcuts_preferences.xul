@@ -50,6 +50,5 @@
 	<key id="esc_cmd" keycode="VK_ESCAPE" oncommand="document.getElementById('ttCustomizableShortcuts_Accept').click()"/>
 		<key id="quit_key" key="W" modifiers="accel" oncommand="document.getElementById('ttCustomizableShortcuts_Accept').click()"/>
 	<key id="find_cmd" modifiers="accel" key="F" oncommand="document.getElementById('ttCustomizableShortcuts_Filter').focus();"/>
-<!-- 	<key id="edit" keycode="VK_ENTER" oncommand="function() { if (document.getElementById('ttCustomizableShortcuts_Tree').isFocused() ) }"/>	 -->
 	</keyset>
 </dialog>
