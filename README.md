@@ -4,11 +4,24 @@ This Firefox add-on allows the user to customize various shortcuts, as well as c
 It is based (and a large part of the code) was originally written by Tim Taubert for the "Customizable Shortcuts" add-on that can be found here: https://addons.mozilla.org/en-US/firefox/addon/customizable-shortcuts/
 After much work and, at one point trying to contribute to the original project but being unable to reconcile all the changes I made with the original author, I decided to release my own branch of the extension.
 
-- Version: 1.2.60
-- Date: 2016-03-28
+This extension supports localization, if you are fluent in a language other than English or Spanish, you can help at <https://www.babelzilla.org/index.php?option=com_wts&Itemid=88&type=lang&extension=5755>,
+No coding knowledge required.
+
+- Version: 1.3.0
+- Date: 2016-04-11
 - Official site: <https://github.com/Lord-Kamina/keybinder>
 
 ## Changes
+#### Version 1.3.0
+
+* Bug Fixes
+	- Small cleanups and removed some deprecated function calls.
+	- Fixed a bug caused by modifying and using shortcuts defined only by a menuitem (Copy, Cut, Paste, etc.), these now work correctly.
+	- Changed the way AltGraph is handled: In Linux, it's a distinct modifier. In Windows it's Control+Alt.
+
+* Changes/Additions
+	- Finally removed dependence on the deprecated window-utils API.
+	
 #### Version 1.2.60
 
 * Bug Fixes
@@ -23,8 +36,6 @@ After much work and, at one point trying to contribute to the original project b
 	- URL Pattern dialog will now close and save changes by pressing Ctrl(Cmd on Mac)+Enter.
 	- e10s support. The extension now officially supports multi-process firefox.
 
-
-## Changes
 #### Version 1.2.41
 
 * Bug Fixes
