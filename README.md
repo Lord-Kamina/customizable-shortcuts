@@ -9,7 +9,8 @@ No coding knowledge required.
 
 - Version: 1.3.0
 - Date: 2016-04-11
-- Official site: <https://github.com/Lord-Kamina/keybinder>
+- Official Releases @ AMO: <https://addons.mozilla.org/en-US/firefox/addon/keybinder>
+- Support site: <https://github.com/Lord-Kamina/keybinder>
 
 ## Changes
 #### Version 1.3.0
