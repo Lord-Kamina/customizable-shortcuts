@@ -1,0 +1,10 @@
+<!ENTITY dialog_title "Custom XUL Keys">
+<!ENTITY filter_placeholder "Search">
+<!ENTITY action_column.label "Action">
+<!ENTITY name_column.label "Key Name">
+<!ENTITY label_column.label "Key Label">
+<!ENTITY edit_button.label "Edit">
+<!ENTITY edit_button.key "E">
+<!ENTITY delete_button.label "Delete">
+<!ENTITY delete_button.key "D">
+<!ENTITY accept_button.label "Close">
