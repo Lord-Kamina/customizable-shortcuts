@@ -1,0 +1,11 @@
+<!ENTITY dialog_title "Keybinder">
+<!ENTITY filter_placeholder "Filtern">
+<!ENTITY action_column.label "Aktion">
+<!ENTITY shortcut_column.label "Tastenkürzel">
+<!ENTITY reset_button.label "Zurücksetzen">
+<!ENTITY reset_button.key "Z">
+<!ENTITY edit_button.label "Ändern">
+<!ENTITY edit_button.key "Ä">
+<!ENTITY disable_button.label "Deaktivieren">
+<!ENTITY disable_button.key "D">
+<!ENTITY accept_button.label "Schließen">

@@ -1,0 +1,4 @@
+<!ENTITY prefwindow.title "Adressmuster">
+<!ENTITY urlpane.title "Adressmuster">
+<!ENTITY textbox.label "Liste von Adressen und Mustern">
+<!ENTITY textbox.placeholder "Eine Liste von exakten Adressen (wie z.B. 'http://www.fail.cl') oder Mustern (wie z.B. '*.mozilla.org'). Pro Zeile darf nur eine Adresse oder Muster enhalten sein, außerdem darf eine Zeile nur einen einzigen '*' enthalten. Fehlerhafte Muster werden automatisch entfernt.">
