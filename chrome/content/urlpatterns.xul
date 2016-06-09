@@ -16,7 +16,7 @@
   </prefpane>
   	<keyset>
 	<key id="esc_cmd" keycode="VK_ESCAPE" oncommand="document.documentElement.getButton('cancel').click()"/>
-		<key id="accept_cmd" keycode="VK_ENTER" modifiers="accel" oncommand="document.documentElement.getButton('accept').click()"/>
+		<key id="accept_cmd" keycode="VK_RETURN" modifiers="accel" oncommand="document.documentElement.getButton('accept').click()"/>
 		<key id="quit_key" key="W" modifiers="accel" oncommand="document.documentElement.getButton('cancel').click()"/>
 	</keyset>
 </prefwindow>
