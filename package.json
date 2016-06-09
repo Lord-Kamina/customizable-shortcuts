@@ -6,6 +6,12 @@
     "version": "1.3.0",
     "title": "Keybinder",
     "id": "keybinder@fail.cl",
+    "icon":{
+	"18":"resource://keybinder-at-fail-dot-cl/data/icon18.png",
+	"32":"resource://keybinder-at-fail-dot-cl/data/icon32.png",
+	"36":"resource://keybinder-at-fail-dot-cl/data/icon36.png",
+	"64":"resource://keybinder-at-fail-dot-cl/data/icon64.png"
+    },
     "main": "lib/main",
     "description": "Enables customization and overriding of several default shortcuts.",
     "contributors": ["Gregorio Litenstein <g.litenstein@gmail.com>","Tim Taubert <tim@timtaubert.de>","Natz (http://cheetahamsloth.deviantart.com)"],
