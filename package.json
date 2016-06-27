@@ -82,6 +82,27 @@
     "title": "Focus Blur Delay",
     "description":"This value corresponds to the amount of time (in milliseconds) before plugins are told to release mouse focus. Default is 5 seconds.",
     "value":5000
+    },
+    {
+    "name": "allowCustomXULKeys",
+    "type": "bool",
+    "title": "Allow Custom XUL keys",
+    "description":"Turn this on to be able to create entirely new XUL keys, which can later be used to create entirely new custom mappings. WARNING: Using this feature requires some knowledge of the browser internals; don't use it unless you know what you are doing or you risk breaking something inside Firefox.",
+    "value":false
+    },
+    {
+    "name": "customXULDialog",
+    "type": "control",
+    "label": "Change",
+    "title": "Custom XUL Keys",
+    "description":"Open the main extension dialog, which will allow you to edit or disable most application shortcuts."
+    },
+	{
+    "name": "customXULKeys",
+    "type": "string",
+    "title": "Custom XUL Keys",
+    "value": "[{\"key\":\"testKey3\",\"label\":\"Test Key 3\",\"command\":\"browser:action3\"},{\"key\":\"testKey2\",\"label\":\"Test Key 2\",\"command\":\"browser:action2\"},{\"key\":\"testKey1\",\"label\":\"Test Key 1\",\"command\":\"browser:action1\"}]",
+    "hidden":true
     }
     ]
 }
