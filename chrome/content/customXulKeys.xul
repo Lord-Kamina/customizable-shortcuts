@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+* This Source Code Form is subject to the terms of the Mozilla Public
+* License, v. 2.0. If a copy of the MPL was not distributed with this
+* file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ -->
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://global/skin/preferences.css" type="text/css"?>
+<?xml-stylesheet href="chrome://keybinder/skin/prefs.css" type="text/css"?>
+<!DOCTYPE dialog SYSTEM "chrome://keybinder/locale/customXulKeys.dtd">
+<dialog
+    id="KeybinderCustomXULDialog"
+    windowtype="Keybinder:CustomXUL"
+    title="&dialog_title;"
+    buttons=","
+    buttonalign="center"
+    defaultButton="none"
+    buttonpack="center"
+    ondialogcancel="return false;"
+    buttonlabelaccept="&accept_button.label;"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+				<hbox id="KeybinderCustomXUL_SearchBox">
+				<textbox id="KeybinderCustomXUL_Filter" flex="1" type="search" placeholder="&filter_placeholder;" />
+				<separator class="thin" />
+				</hbox>
+				<hbox id="KeybinderCustomXUL_TreeBox">
+				<tree id="KeybinderCustomXUL_Tree" style="height: 25em; width:auto;" seltype="single" editable="true" hidecolumnpicker="true" disableKeyNavigation="true" flex="1">
+					<treecols>
+						<treecol id="KeybinderCustomXUL_DummyCol" label="" flex="1" editable="false" selectable="false" hidden="true">
+						</treecol>
+						<treecol id="KeybinderCustomXUL_NameCol" label="&name_column.label;" flex="1" editable="true" selectable="true">
+						</treecol>
+						<treecol id="KeybinderCustomXUL_LabelCol" label="&label_column.label;" flex="1" editable="true" selectable="true">
+						</treecol>
+						<treecol id="KeybinderCustomXUL_ActionCol" label="&action_column.label;" flex="1" editable="true" selectable="true">
+						</treecol>
+					</treecols>
+					<treechildren>
+					</treechildren>
+				</tree>
+				</hbox>
+				<separator class="thin" />
+				<hbox id="KeybinderCustomXUL_ButtonBox">
+					<button id="KeybinderCustomXUL_Add" label="&add_button.label;" accesskey="&add_button.key;" disabled="true" />
+					<button id="KeybinderCustomXUL_Edit" label="&edit_button.label;" accesskey="&edit_button.key;" disabled="true" />
+					<button id="KeybinderCustomXUL_Delete" label="&delete_button.label;" accesskey="&delete_button.key;" disabled="true" />
+					<spacer flex="1" />
+					<button id="KeybinderCustomXUL_Accept" label="&accept_button.label;" disabled="false" />
+				</hbox>
+	<keyset>
+	<key id="esc_cmd" keycode="VK_ESCAPE" oncommand="document.getElementById('KeybinderCustomXUL_Accept').click()"/>
+		<key id="quit_key" key="W" modifiers="accel" oncommand="document.getElementById('KeybinderCustomXUL_Accept').click()"/>
+	<key id="find_cmd" modifiers="accel" key="F" oncommand="document.getElementById('KeybinderCustomXUL_Filter').focus();"/>
+	</keyset>
+</dialog>

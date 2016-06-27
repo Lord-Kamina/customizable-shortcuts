@@ -8,6 +8,22 @@
     overflow: visible;
 }
 
+#KeybinderCustomXULDialog {
+	width: 550px;
+	height: auto;
+    overflow: visible;
+}
+
+#KeybinderCustomXUL_NameCol {
+	width: 100px;
+	max-width: 100px;
+}
+
+#KeybinderCustomXUL_ActionCol {
+	width: 150px;
+	max-width: 150px;
+}
+
 #ttCustomizableShortcuts_Tree > treechildren::-moz-tree-cell-text(container),
 #ttCustomizableShortcuts_Tree > treechildren::-moz-tree-cell-text(custom) {
   font-weight: 700;
