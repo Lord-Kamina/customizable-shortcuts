@@ -1,10 +1,12 @@
-<!ENTITY dialog_title "Custom XUL Keys">
-<!ENTITY filter_placeholder "Search">
-<!ENTITY action_column.label "Action">
-<!ENTITY name_column.label "Key Name">
-<!ENTITY label_column.label "Key Label">
-<!ENTITY edit_button.label "Edit">
+<!ENTITY dialog_title "Comandos XUL Propios">
+<!ENTITY filter_placeholder "Buscar">
+<!ENTITY action_column.label "Acción">
+<!ENTITY name_column.label "Identificador">
+<!ENTITY label_column.label "Nombre">
+<!ENTITY add_button.label "Agregar">
+<!ENTITY add_button.key "A">
+<!ENTITY edit_button.label "Editar">
 <!ENTITY edit_button.key "E">
-<!ENTITY delete_button.label "Delete">
-<!ENTITY delete_button.key "D">
-<!ENTITY accept_button.label "Close">
+<!ENTITY delete_button.label "Borrar">
+<!ENTITY delete_button.key "B">
+<!ENTITY accept_button.label "Cerrar">
