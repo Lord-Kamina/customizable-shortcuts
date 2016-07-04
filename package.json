@@ -91,6 +91,14 @@
     "value":false
     },
     {
+    "name": "keysMapDirty",
+    "type": "bool",
+    "title": "Dirty Keys Map",
+    "description":"If this value is true, we should ignore the cache and rebuild the list of Keys from scratch.",
+    "value":false,
+    "hidden":true
+    },
+    {
     "name": "customXULDialog",
     "type": "control",
     "label": "Change",
