@@ -2,7 +2,7 @@
 <!ENTITY filter_placeholder "Buscar">
 <!ENTITY action_column.label "Acción">
 <!ENTITY name_column.label "Identificador">
-<!ENTITY label_column.label "Nombre">
+<!ENTITY label_column.label "Etiqueta">
 <!ENTITY add_button.label "Agregar">
 <!ENTITY add_button.key "A">
 <!ENTITY edit_button.label "Editar">
