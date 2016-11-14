@@ -4,17 +4,13 @@
 var clickListeners = {};
 var timesCrawled = 0;
 var pluginCrawlLimit = self.options.pluginCrawlLimit;
-console.warn("Setting timesCrawled to 0!");
 
 var checkAgain = function () {
-	console.warn("A DOM node changed, should we rescan for embeds?");
 	if (timesCrawled <= pluginCrawlLimit) {
 		timesCrawled++;
-		console.warn("YES! We should keep searching!");
 		self.port.emit("noEmbeds", { "ID": workerID, "checkAgain": true } ); // Fail me ONE more time...
 	}
 	else {
-		console.warn("NO! We should not keep searching!");
 		self.port.emit("noEmbeds", { "ID": workerID, "checkAgain": false } );
 	}
 }
@@ -35,7 +31,6 @@ function checkPlugins (workerID) {
                     }, stealFocusDelay)
                 }
             } // 		Capture only left-clicks, and check whether we want to ignore shift+click.
-            console.warn("Currently looking at embed: "+embeds[i].getAttribute("id"));
             if (!embeds[i].hasAttribute('KeybinderListenerAdded')) {
             embeds[i].addEventListener('click', listener);
             embeds[i].setAttribute('KeybinderListenerAdded',true);
@@ -44,8 +39,6 @@ function checkPlugins (workerID) {
         clickListeners[embeds[i].id] = listener; // Store a reference to the new listener for eventual removal.
     } 
     if (embeds.length < 1) {
-    	console.warn("[CONTENT SCRIPT] Did not find any embeds!");
-        console.warn("[CONTENT SCRIPT] workerID number is...? "+workerID);
         let body = document.getElementsByTagName("BODY")[0];
 		if (!(body.hasAttribute("KeybinderListenerAdded"))) {
 		body.addEventListener("DOMNodeInserted", checkAgain);
@@ -55,7 +48,6 @@ function checkPlugins (workerID) {
 }
 
 self.port.on("findPlugins", function findPlugins(workerInfo) {// Look for objects to modify.
-console.warn("[CONTENT SCRIPT] Checking plugins, try n°: "+timesCrawled);
 workerID = workerInfo["ID"].toString();
 checkPlugins(workerID);
 });
