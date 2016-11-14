@@ -1,116 +1,165 @@
 {
-    "name": "keybinder",
-    "license": "MPL 2.0",
-    "author": "Gregorio Litenstein <g.litenstein@gmail.com>",
-    "homepage": "https://github.com/Lord-Kamina/keybinder",
-    "version": "1.3.0",
-    "title": "Keybinder",
-    "id": "keybinder@fail.cl",
-    "icon":{
-	"18":"resource://keybinder-at-fail-dot-cl/data/icon18.png",
-	"32":"resource://keybinder-at-fail-dot-cl/data/icon32.png",
-	"36":"resource://keybinder-at-fail-dot-cl/data/icon36.png",
-	"64":"resource://keybinder-at-fail-dot-cl/data/icon64.png"
-    },
-    "main": "lib/main",
-    "description": "Enables customization and overriding of several default shortcuts.",
-    "contributors": ["Gregorio Litenstein <g.litenstein@gmail.com>","Tim Taubert <tim@timtaubert.de>","Natz (http://cheetahamsloth.deviantart.com)"],
-
-    "engines": {
+  "name": "keybinder",
+  "license": "MPL 2.0",
+  "author": "Gregorio Litenstein <g.litenstein@gmail.com>",
+  "homepage": "https://github.com/Lord-Kamina/keybinder",
+  "version": "1.4.0",
+  "title": "Keybinder",
+  "id": "keybinder@fail.cl",
+  "icon": {
+    "18": "resource://keybinder-at-fail-dot-cl/data/icon18.png",
+    "32": "resource://keybinder-at-fail-dot-cl/data/icon32.png",
+    "36": "resource://keybinder-at-fail-dot-cl/data/icon36.png",
+    "64": "resource://keybinder-at-fail-dot-cl/data/icon64.png"
+  },
+  "main": "lib/main",
+  "description": "Enables customization and overriding of several default shortcuts.",
+  "contributors": [
+    "Gregorio Litenstein <g.litenstein@gmail.com>",
+    "Tim Taubert <tim@timtaubert.de>",
+    "Natz (http://cheetahamsloth.deviantart.com)"
+  ],
+  "engines": {
     "firefox": ">=38.0a1"
   },
-    "permissions":{
-    "private-browsing":true,
-    "multiprocess":true
-    },
-    "preferences":[
+  "permissions": {
+    "private-browsing": true,
+    "multiprocess": true
+  },
+  "preferences": [
     {
-    "name": "overridePluginFocus",
-    "type": "bool",
-    "title": "Steal focus from plug-ins?",
-    "description":"When this is on, plugins such as Flash will be told to release mouse focus a certain amount of time after they have been clicked on.",
-    "value":true    
-    },
-    {
-    "name": "shiftAllowFocus",
-    "type": "bool",
-    "title": "Allow plug-ins to keep focus on Shift+Click?",
-    "description":"When this is on, plugins such as Flash will be allows to retain mouse focus if Shift was pressed during the click.",
-    "value":true
+      "name": "overridePluginFocus",
+      "type": "bool",
+      "title": "Steal focus from plug-ins?",
+      "description": "When this is on, plugins such as Flash will be told to release mouse focus a certain amount of time after they have been clicked on.",
+      "value": true
     },
     {
-    "name": "UrlPatternsDialog",
-    "type": "control",
-    "label": "Edit",
-    "title": "Address Patterns",
-    "description":"Edit address patterns used to define the websites on which we'll force plug-ins to release focus. Valid patterns are full URLs and domain names with or without '*' as a wildcard. Only one * allowed per URL, the add-on will automatically remove invalid entries from the list."
+      "name": "shiftAllowFocus",
+      "type": "bool",
+      "title": "Allow plug-ins to keep focus on Shift+Click?",
+      "description": "When this is on, plugins such as Flash will be allows to retain mouse focus if Shift was pressed during the click.",
+      "value": true
     },
     {
-    "name": "ShortcutsDialog",
-    "type": "control",
-    "label": "Change",
-    "title": "Shortcut Mappings",
-    "description":"Open the main extension dialog, which will allow you to edit or disable most application shortcuts."
+      "name": "UrlPatternsDialog",
+      "type": "control",
+      "label": "Edit",
+      "title": "Address Patterns",
+      "description": "Edit address patterns used to define the websites on which we'll force plug-ins to release focus. Valid patterns are full URLs and domain names with or without '*' as a wildcard. Only one * allowed per URL, the add-on will automatically remove invalid entries from the list."
     },
     {
-    "name": "pluginCssSelectors",
-    "type": "string",
-    "title": "List of CSS Selectors by which to find plugins",
-    "description":"This list will define which plugins the extension will try to override as described above.",
-    "value":"embed,object"
-    },
-	{
-    "name": "domainUrlPattern",
-    "type": "string",
-    "title": "Address Pattern",
-    "value": "[\"*\"]",
-    "hidden":true
+      "name": "ShortcutsDialog",
+      "type": "control",
+      "label": "Change",
+      "title": "Shortcut Mappings",
+      "description": "Open the main extension dialog, which will allow you to edit or disable most application shortcuts."
     },
     {
-    "name": "pluginCrawlLimit",
-    "type": "menulist",
-    "title": "Retry Limit",
-    "description": "Some sites use javascript to add flash after everything is loaded, in these cases we need to rescan the page when a change in the structure is detected. This determines the maximum number of items this should be allowed per page. Default is 5 times.",
-    "value": 5,
-    "options":[
-    {"value": 1, "label":1},{"value": 2, "label":2},{"value": 3, "label":3},{"value": 4, "label":4},{"value": 5, "label":5},{"value": 6, "label":6},{"value": 7, "label":7},{"value": 8, "label":8},{"value": 9, "label":9},{"value": 10, "label":10}
-    ]
+      "name": "pluginCssSelectors",
+      "type": "string",
+      "title": "List of CSS Selectors by which to find plugins",
+      "description": "This list will define which plugins the extension will try to override as described above.",
+      "value": "embed,object"
     },
     {
-    "name": "stealFocusDelay",
-    "type": "integer",
-    "title": "Focus Blur Delay",
-    "description":"This value corresponds to the amount of time (in milliseconds) before plugins are told to release mouse focus. Default is 5 seconds.",
-    "value":5000
+      "name": "domainUrlPattern",
+      "type": "string",
+      "title": "Address Pattern",
+      "value": "[\"*\"]",
+      "hidden": true
     },
     {
-    "name": "allowCustomXULKeys",
-    "type": "bool",
-    "title": "Allow Custom XUL keys",
-    "description":"Turn this on to be able to create entirely new XUL keys, which can later be used to create entirely new custom mappings. WARNING: Using this feature requires some knowledge of the browser internals; don't use it unless you know what you are doing or you risk breaking something inside Firefox.",
-    "value":false
+      "name": "pluginCrawlLimit",
+      "type": "menulist",
+      "title": "Retry Limit",
+      "description": "Some sites use javascript to add flash after everything is loaded, in these cases we need to rescan the page when a change in the structure is detected. This determines the maximum number of items this should be allowed per page. Default is 5 times.",
+      "value": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": 1
+        },
+        {
+          "value": 2,
+          "label": 2
+        },
+        {
+          "value": 3,
+          "label": 3
+        },
+        {
+          "value": 4,
+          "label": 4
+        },
+        {
+          "value": 5,
+          "label": 5
+        },
+        {
+          "value": 6,
+          "label": 6
+        },
+        {
+          "value": 7,
+          "label": 7
+        },
+        {
+          "value": 8,
+          "label": 8
+        },
+        {
+          "value": 9,
+          "label": 9
+        },
+        {
+          "value": 10,
+          "label": 10
+        }
+      ]
     },
     {
-    "name": "keysMapDirty",
-    "type": "bool",
-    "title": "Dirty Keys Map",
-    "description":"If this value is true, we should ignore the cache and rebuild the list of Keys from scratch.",
-    "value":false,
-    "hidden":true
+      "name": "stealFocusDelay",
+      "type": "integer",
+      "title": "Focus Blur Delay",
+      "description": "This value corresponds to the amount of time (in milliseconds) before plugins are told to release mouse focus. Default is 5 seconds.",
+      "value": 5000
     },
     {
-    "name": "customXULDialog",
-    "type": "control",
-    "label": "Change",
-    "title": "Custom XUL Keys",
-    "description":"Open the main extension dialog, which will allow you to edit or disable most application shortcuts."
+      "name": "allowCustomXULKeys",
+      "type": "bool",
+      "title": "Allow Custom XUL keys",
+      "description": "Turn this on to be able to create entirely new XUL keys, which can later be used to create entirely new custom mappings. WARNING: Using this feature requires some knowledge of the browser internals; don't use it unless you know what you are doing or you risk breaking something inside Firefox.",
+      "value": false
     },
-	{
-    "name": "customXULKeys",
-    "type": "string",
-    "title": "Custom XUL Keys",
-    "value": "[{\"key\":\"testKey3\",\"label\":\"Test Key 3\",\"command\":\"browser:action3\"},{\"key\":\"testKey2\",\"label\":\"Test Key 2\",\"command\":\"browser:action2\"},{\"key\":\"testKey1\",\"label\":\"Test Key 1\",\"command\":\"browser:action1\"}]",
-    "hidden":true
+    {
+      "name": "keysMapDirty",
+      "type": "bool",
+      "title": "Dirty Keys Map",
+      "description": "If this value is true, we should ignore the cache and rebuild the list of Keys from scratch.",
+      "value": false,
+      "hidden": true
+    },
+    {
+      "name": "customXULDialog",
+      "type": "control",
+      "label": "Change",
+      "title": "Custom XUL Keys",
+      "description": "Open the main extension dialog, which will allow you to edit or disable most application shortcuts."
+    },
+    {
+      "name": "customXULKeys",
+      "type": "string",
+      "title": "Custom XUL Keys",
+      "value": "[]",
+      "hidden": true
     }
-    ]
+  ],
+  "dependencies": {
+    "markdown-it": "^8.0.1",
+    "markdown-it-anchor": "^2.5.0",
+    "markdown-it-table-of-contents": "^0.2.3",
+    "punycode": "^1.4.1",
+    "uc.micro": "^1.0.3"
+  }
 }
