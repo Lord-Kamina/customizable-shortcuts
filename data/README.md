@@ -11,19 +11,25 @@ No coding knowledge required.
 
 ## Current Version
     - Version: 1.4.0
-    - Date: 2016-10-29
+    - Date: 2016-11-14
     - Official Releases @ AMO: <https://addons.mozilla.org/en-US/firefox/addon/keybinder>
     - Support site: <https://github.com/Lord-Kamina/keybinder>
 
+## Known Issues
++ Some Shortcuts with special characters will show superfluous modifiers (Like on spanish keyboards, "?" will also register shift as a keypress.), this is mostly a cosmetic bug.
++ Certain commands can only be disabled, not remapped (So far: Hide Firefox and Hide Others in macOS)
++ Some commands, although able to be remapped, will also respond to their original shortcut. (So far seen on macOS: Shortcuts which by default include Alt/Option and a letter)
+
 ## TO DO
++ Port the bug-78414 workaround to MutationObserver.
++ Add missing strings to existing localizations.
 + Various Localizations
-+ Disable keys that cannot actually be modified.
 
 # Release Notes
 
 [[toc]]
 
-## [1.4.0] - 2016-10-12
+## [1.4.0] - 2016-XX-XX
 
 + ### Added
   + At the request of many, added an optional (and experimental) feature to create custom XUL keys, which can then be assigned to shortcuts in the usual way. As of now, I have limited these custom keys to commands already defined in the Firefox commandset (i.e., no custom javascript).
@@ -33,12 +39,18 @@ No coding knowledge required.
 + ### Changed
   + Besides the Tools menu and the extensions preferences, the mappings dialog can now also be accessed via a toolbar button.
   + Add "Quit" and "Preferences" shortcuts when not defined normally.
-
+  + Moved several previously uncategorized shortcuts into their proper groups. Removed duplicate shortcuts in more than one group.
+  + Completely re-factored the way keypresses are parsed, in order to make handling more robust. Now using KeyboardEvent.keyCode and KeyboardEvent.code when the former is unavailable, thus bringing back support for dead keys, among other things.
+  
 + ### Fixed
   + Implemented proper sizes for all icons.
   + Fixed bug caused by obsolete keycode VK\_ENTER.	
   + Made the release notes into a more workable format.
   + Windows.getMostRecentWindow() sometimes returned an incorrect window, which caused odd-behavior in some commands like selecting a specific tab; to fix this we now use the low-level API. (Original bug reported by Rami El Khatib)
+  + Fixed sorting in the main shortcut dialog.
+  + Fixed disabling and remapping of shortcuts defined only by menu items.
+  + Fixed bug with disabling keys: All keys should now be re-enabled when the extension unloads.
+  + Loads of smaller bug-fixes.
 
 ## [1.3.0] - 2016-04-11
 + ### Changed
