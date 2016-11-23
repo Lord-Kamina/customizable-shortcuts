@@ -3,7 +3,7 @@
   "license": "MPL 2.0",
   "author": "Gregorio Litenstein <g.litenstein@gmail.com>",
   "homepage": "https://github.com/Lord-Kamina/keybinder",
-  "version": "1.4.0",
+  "version": "2.0.0",
   "title": "Keybinder",
   "id": "keybinder@fail.cl",
   "icon": {
@@ -136,7 +136,7 @@
       "name": "keysMapDirty",
       "type": "bool",
       "title": "Dirty Keys Map",
-      "description": "If this value is true, we should ignore the cache and rebuild the list of Keys from scratch.",
+      "description": "If this value is true, we should ignore the cache and rebuild the list of Keys from scratch. (Used when enabling/disabling the Custom XUL keys functionality)",
       "value": false,
       "hidden": true
     },
@@ -152,6 +152,13 @@
       "type": "string",
       "title": "Custom XUL Keys",
       "value": "[]",
+      "hidden": true
+    },
+    {
+      "name": "keybinderOverlays",
+      "type": "string",
+      "title": "Shortcut Definitions",
+      "value": "{}",
       "hidden": true
     }
   ],

@@ -10,15 +10,13 @@ This extension supports localization, if you are fluent in a language other than
 No coding knowledge required.
 
 ## Current Version
-    - Version: 1.4.0
-    - Date: 2016-11-14
+    - Version: 2.0.0
+    - Date: 2016-11-23
     - Official Releases @ AMO: <https://addons.mozilla.org/en-US/firefox/addon/keybinder>
     - Support site: <https://github.com/Lord-Kamina/keybinder>
 
 ## Known Issues
-+ Some Shortcuts with special characters will show superfluous modifiers (Like on spanish keyboards, "?" will also register shift as a keypress.), this is mostly a cosmetic bug.
-+ Certain commands can only be disabled, not remapped (So far: Hide Firefox and Hide Others in macOS)
-+ Some commands, although able to be remapped, will also respond to their original shortcut. (So far seen on macOS: Shortcuts which by default include Alt/Option and a letter)
++ Certain commands can only be disabled, not remapped (So far: "Hide Firefox" and "Hide Others" in macOS)
 
 ## TO DO
 + Port the bug-78414 workaround to MutationObserver.
@@ -29,7 +27,7 @@ No coding knowledge required.
 
 [[toc]]
 
-## [1.4.0] - 2016-XX-XX
+## [2.0.0] - 2016-11-23
 
 + ### Added
   + At the request of many, added an optional (and experimental) feature to create custom XUL keys, which can then be assigned to shortcuts in the usual way. As of now, I have limited these custom keys to commands already defined in the Firefox commandset (i.e., no custom javascript).
@@ -41,6 +39,7 @@ No coding knowledge required.
   + Add "Quit" and "Preferences" shortcuts when not defined normally.
   + Moved several previously uncategorized shortcuts into their proper groups. Removed duplicate shortcuts in more than one group.
   + Completely re-factored the way keypresses are parsed, in order to make handling more robust. Now using KeyboardEvent.keyCode and KeyboardEvent.code when the former is unavailable, thus bringing back support for dead keys, among other things.
+  + Shortcut mappings will now be stored alongside the rest of preferences. The extension will detect previously added shortcuts and convert them automatically when updating.
   
 + ### Fixed
   + Implemented proper sizes for all icons.
