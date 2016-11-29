@@ -10,8 +10,8 @@ This extension supports localization, if you are fluent in a language other than
 No coding knowledge required.
 
 ## Current Version
-    - Version: 2.0.1
-    - Date: 2016-11-24
+    - Version: 2.0.3
+    - Date: 2016-11-29
     - Official Releases @ AMO: <https://addons.mozilla.org/en-US/firefox/addon/keybinder>
     - Support site: <https://github.com/Lord-Kamina/keybinder>
 
@@ -26,6 +26,10 @@ No coding knowledge required.
 # Release Notes
 
 [[toc]]
+
+## [2.0.3] - 2016-11-29
++ ### Fixed
+  + Use minified libraries where possible, deleted several files with unused code from library folders, in order to accomodate AMO review process.
 
 ## [2.0.1] - 2016-11-24
 + ### Changed
