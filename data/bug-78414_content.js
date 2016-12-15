@@ -5,6 +5,30 @@ var clickListeners = {};
 var timesCrawled = 0;
 var pluginCrawlLimit = self.options.pluginCrawlLimit;
 
+// var observerTest = new MutationObserver(
+// 
+// 	function (changes) {
+// 		changes.forEach(function(event) {
+// 		    console.warn("We've got a mutation, type: "+JSON.stringify(event.type,null,2));
+// 		    console.warn("We've got a mutation, target: "+JSON.stringify(event.target,null,2));
+// 		    console.warn("We've got a mutation, addedNodes: "+JSON.stringify(event.addedNodes,null,2));
+// 		    if ("childList" == event.type || "subtree" == event.type) {
+// 		    
+// 		    for (let node of event.addedNodes.values()) {
+// 		    
+// 		    console.warn("Debugging a node... id: "+node.id+", name: "+node.nodeName+", parent: "+node.parentNode.id);
+// 		    
+// 		    };
+// 		    
+// 		    
+// 		    
+// 		    }
+// 			});
+// 	}
+// );
+
+var observerConfig = { subtree: true };
+
 var checkAgain = function () {
 	if (timesCrawled <= pluginCrawlLimit) {
 		timesCrawled++;
@@ -26,7 +50,7 @@ function checkPlugins (workerID) {
         var listener = function(evt) {
                 if ((true != shiftAllowFocus || true != evt.shiftKey) && (1 == evt.which)) {
                     window.setTimeout(function() {
-                    	window.alert('THE EVENT IS WORKING');
+//                     	window.alert('THE EVENT IS WORKING');
                         evt.target.blur()
                     }, stealFocusDelay)
                 }
@@ -40,6 +64,8 @@ function checkPlugins (workerID) {
     } 
     if (embeds.length < 1) {
         let body = document.getElementsByTagName("BODY")[0];
+//         let html = document.getElementsByTagName("HTML")[0];
+//         observerTest.observe(html,observerConfig);
 		if (!(body.hasAttribute("KeybinderListenerAdded"))) {
 		body.addEventListener("DOMNodeInserted", checkAgain);
     	body.setAttribute("KeybinderListenerAdded",true);
