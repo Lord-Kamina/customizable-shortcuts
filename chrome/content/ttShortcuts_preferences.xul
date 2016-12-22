@@ -23,7 +23,7 @@
 				<textbox id="ttCustomizableShortcuts_Filter" flex="1" type="search" placeholder="&filter_placeholder;" />
 				<separator class="thin" />
 				</hbox>
-				<hbox id="ttCustomizableShortcuts_TreeBox">
+				<hbox id="ttCustomizableShortcuts_TreeBox" flex="1">
 				<tree id="ttCustomizableShortcuts_Tree" style="height: 25em; width:auto;" seltype="single" editable="true" hidecolumnpicker="true" disableKeyNavigation="true" flex="1">
 					<treecols>
 						<treecol id="ttCustomizableShortcuts_ActionCol" label="&action_column.label;" flex="1" primary="true">
