@@ -10,8 +10,8 @@ This extension supports localization, if you are fluent in a language other than
 No coding knowledge required.
 
 ## Current Version
-    - Version: 2.0.3
-    - Date: 2016-11-29
+    - Version: 2.0.4
+    - Date: 2016-12-21
     - Official Releases @ AMO: <https://addons.mozilla.org/en-US/firefox/addon/keybinder>
     - Support site: <https://github.com/Lord-Kamina/keybinder>
 
@@ -26,6 +26,16 @@ No coding knowledge required.
 # Release Notes
 
 [[toc]]
+
+## [2.0.4] - 2016-12-21
++ ### Changed
+  + Shortcuts and Custom XUL windows can now be resized.
+  + Release notes window is now given focus when the extension is updated.
++ ### Fixed
+  + Removed that annoying "THE EVENT IS WORKING" alert.
+  + Fixed shortcuts relying on the KeyboardEvent.code fallback not actually storing that code, this should fix most issues with shortcuts not persisting across restarts.
+  + Minor changes to locale, and escaping of Backslashes to prevent some labels breaking.
+  + Fixed a typo in the toolbar button.
 
 ## [2.0.3] - 2016-11-29
 + ### Fixed
