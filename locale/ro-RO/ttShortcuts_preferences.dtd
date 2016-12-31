@@ -1,0 +1,11 @@
+<!ENTITY dialog_title "Scurtaturi tastatura">
+<!ENTITY filter_placeholder "Cauta">
+<!ENTITY action_column.label "Actiune">
+<!ENTITY shortcut_column.label "Scurtatura">
+<!ENTITY reset_button.label "Resetare">
+<!ENTITY reset_button.key "R">
+<!ENTITY edit_button.label "Modifica">
+<!ENTITY edit_button.key "E">
+<!ENTITY disable_button.label "Blocheaza">
+<!ENTITY disable_button.key "D">
+<!ENTITY accept_button.label "Inchide">

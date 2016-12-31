@@ -1,0 +1,12 @@
+<!ENTITY dialog_title "Parametri personalizati XUL">
+<!ENTITY filter_placeholder "Cauta">
+<!ENTITY action_column.label "Actiune">
+<!ENTITY name_column.label "Valoarea parametrului">
+<!ENTITY label_column.label "Eticheta parametrului">
+<!ENTITY add_button.label "Adauga">
+<!ENTITY add_button.key "A">
+<!ENTITY edit_button.label "Modifica">
+<!ENTITY edit_button.key "E">
+<!ENTITY delete_button.label "Sterge">
+<!ENTITY delete_button.key "D">
+<!ENTITY accept_button.label "Inchide">

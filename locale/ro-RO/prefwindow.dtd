@@ -1,0 +1,4 @@
+<!ENTITY prefwindow.title "Determinare URL-uri">
+<!ENTITY urlpane.title "Determinare URL-uri">
+<!ENTITY textbox.label "Lista de adrese si tipare de gasit">
+<!ENTITY textbox.placeholder "O lista de URL-uri precum 'http://www.fail.cl' sau sabloane precum '*.mozilla.org'. Trebuie specificata o singura adresa sau sablon pe fiecare linie, fiecare continand cel mult un caracter '*'; sabloanele cu erori vor fi eliminate automat.">
