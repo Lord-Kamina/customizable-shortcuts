@@ -10,8 +10,8 @@ This extension supports localization, if you are fluent in a language other than
 No coding knowledge required.
 
 ## Current Version
-    - Version: 2.0.4
-    - Date: 2016-12-21
+    - Version: 2.0.5
+    - Date: 2017-04-13
     - Official Releases @ AMO: <https://addons.mozilla.org/en-US/firefox/addon/keybinder>
     - Support site: <https://github.com/Lord-Kamina/keybinder>
 
@@ -20,12 +20,22 @@ No coding knowledge required.
 
 ## TO DO
 + Port the bug-78414 workaround to MutationObserver.
-+ Add missing strings to existing localizations.
 + Various Localizations
 
 # Release Notes
 
+# SORRY GUYS, BUT I'M AFRAID THIS IS THE END OF THE LINE.
+I wanted to release a last update to address a couple bugs, and mkz's locale but I'm afraid this will be the last update to Keybinder. Mozilla's self-destruct course wth Firefox (coupled with not even having adopted all WebExtensions APIs yet) makes this addon impossible to maintain (and sadly, soon to cease working at all). Already many commands will not work (especially new ones) as XUL is being deprecated, and XUL keysets was the foundation this add-on relied on. I'm probably going to move to Vivaldi or something, I guess. Way to go, Mozilla.
+
 [[toc]]
+
+## [2.0.5] - 2017-04-13
++ ### Added
+  + ro-RO Localization, by mkz over at Babelzilla
++ ### Changed
+  + The Extension now checks whether tab previews are enabled before adding the next-tab and prev-tab commands.
++ ### Fixed
+  + Made sure content workers were properly removed.
 
 ## [2.0.4] - 2016-12-21
 + ### Changed
